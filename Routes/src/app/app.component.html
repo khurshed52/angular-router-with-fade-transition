@@ -1,0 +1,24 @@
+<!-- <mat-radio-group>
+  <mat-radio-button value="1">Option 1</mat-radio-button>
+  <mat-radio-button value="2">Option 2</mat-radio-button>
+</mat-radio-group>
+<br>
+
+<mat-form-field>
+  <mat-select placeholder="Favorite food">
+    <mat-option *ngFor="let food of foods" [value]="food.value">
+      {{ food.viewValue }}
+    </mat-option>
+  </mat-select>
+</mat-form-field> -->
+
+<nav>
+  <a routerLink="/home">Home</a>
+  <a routerLink="/about">About us </a>
+  <a routerLink="/contact">Contact us </a>
+</nav>
+
+<main [@fadeAnimation]="getRouterOutletState(o)">
+    <router-outlet #o="outlet"></router-outlet>
+  </main>
+
